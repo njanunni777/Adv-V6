@@ -28,8 +28,8 @@ async def start(bot, update):
             await update.reply_cached_media(
                 file_id,
                 quote=True,
-                caption = caption,
-                parse_mode="html",
+                caption = f"{file_name} /n @relaxxmovies",
+                parse_mode="html"
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
